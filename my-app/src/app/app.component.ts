@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {Component} from '@angular/core';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
-@Component ({
-  imports: [
-    MatSlideToggleModule,
-  ]
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss'
 })
-class AppComponent {}
+
+
+
+export class AppComponent {
+  title = 'my-app';
+}
